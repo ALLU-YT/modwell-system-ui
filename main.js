@@ -381,3 +381,102 @@ function showCouponDetails() {
   var couponDetails = document.getElementById("coupen_details");
   couponDetails.style.display = "block";
 }
+
+function singleProductCate() {
+  window.location.href = "singleCategoryProducts.html";
+}
+
+function change(item) {
+  const buttons = document.querySelectorAll("ion-icon");
+  buttons.forEach(function (obj) {
+    obj.classList.remove("activee");
+  });
+  item.classList.add("activee");
+}
+
+function displysignUpForm() {
+  // Assuming there's only one element with each class
+  document.getElementsByClassName("mobileSignup")[0].style.display = "block";
+  document.getElementsByClassName("mobilelogin")[0].style.display = "none";
+}
+function displyLoginUpForm() {
+  // Assuming there's only one element with each class
+  document.getElementsByClassName("mobileSignup")[0].style.display = "none";
+  document.getElementsByClassName("mobilelogin")[0].style.display = "block";
+}
+
+function homepage() {
+  window.location.href = "index.html";
+}
+function ViewOrderPage() {
+  window.location.href = "MobileOrderDetails.html";
+}
+function bestSeller() {
+  window.location.href = "bestSellerProucts.html";
+}
+
+function cartPage() {
+  window.location.href = "addToCartPage.html";
+}
+
+// Get the modal
+var modal = document.getElementById("myModal_1");
+
+// Get the button that opens the modal
+var btn = document.getElementById("addTicketBtn_1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closemodal_1")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+  modal.style.display = "block";
+  document.body.classList.add("modal-openmodal_1");
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+  document.body.classList.remove("modal-openmodal_1");
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-openmodal_1");
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  const gallery = document.querySelector(".gallery");
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  gallery.addEventListener("mousedown", (e) => {
+    isDown = true;
+    gallery.classList.add("active");
+    startX = e.pageX - gallery.offsetLeft;
+    scrollLeft = gallery.scrollLeft;
+    e.preventDefault();
+  });
+
+  gallery.addEventListener("mouseleave", () => {
+    isDown = false;
+    gallery.classList.remove("active");
+  });
+
+  gallery.addEventListener("mouseup", () => {
+    isDown = false;
+    gallery.classList.remove("active");
+  });
+
+  gallery.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - gallery.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scroll speed
+    gallery.scrollLeft = scrollLeft - walk;
+  });
+});
