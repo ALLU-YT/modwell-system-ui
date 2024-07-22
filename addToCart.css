@@ -170,8 +170,9 @@ body {
   /* height: 110px; */
   background: #ffffff;
   /* margin: 8px; */
-  border-radius: 10px;
-  margin-bottom: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* margin-bottom: 40px; */
 }
 
 .coupon_input {
@@ -1076,4 +1077,7 @@ button[type="submit"]:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+}
+#coupen_details {
+  display: none;
 }

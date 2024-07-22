@@ -376,3 +376,8 @@ function displyLoginUpForm() {
   document.getElementsByClassName("mobileSignup")[0].style.display = "none";
   document.getElementsByClassName("mobilelogin")[0].style.display = "block";
 }
+
+function showCouponDetails() {
+  var couponDetails = document.getElementById("coupen_details");
+  couponDetails.style.display = "block";
+}
