@@ -743,20 +743,14 @@
           </div>
         </div>
 
-        <nav aria-label="Page navigation example">
+        <nav aria-label="Page navigation example" style="margin-top: 30px;">
           <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
             <li class="page-item">
-              <a class="page-link" href="#">Previous</a>
+              <a class="page-link" href="/categoryPages/categorypage1.html">1</a>
             </li>
             <li class="page-item">
-              <a class="page-link" href="/categoryPages/categorypage1.html"
-                >1</a
-              >
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="/categoryPages/categorypage2.html"
-                >2</a
-              >
+              <a class="page-link" href="/categoryPages/categorypage2.html">2</a>
             </li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item"><a class="page-link" href="#">4</a></li>
@@ -764,92 +758,222 @@
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
           </ul>
         </nav>
+  
+        <!-- Add On -->
+  
+        <style>
+          .pagination {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 10px;
+  }
+  
+  .page-item {
+      margin: 0 5px;
+  }
+  
+  .page-link {
+      display: block;
+      padding: 10px 15px;
+      border: 1px solid #000000;
+      color: #ffffff;
+      background-color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+  }
+  
+  .page-link:hover {
+      background-color: #e9ecef;
+      border-color: #dee2e6;
+      text-decoration: none;
+  }
+  
+  .page-item.active .page-link {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: white;
+  }
+  
+  .page-item.disabled .page-link {
+      color: #6c757d;
+      pointer-events: none;
+      cursor: not-allowed;
+  }
+  
+  @media (max-width: 576px) {
+      .pagination {
+          flex-wrap: wrap;
+      }
+      .page-item {
+          flex: 1 1 auto;
+          margin: 5px 0;
+      }
+      .page-link {
+          text-align: center;
+      }
+  }
+  
+          .gallery-wrapper {
+            overflow: hidden;
+            margin: auto;
+            border-radius: 10px;
+            max-width: 100%;
+            width: 713px;
+          }
+  
+          .gallery {
+            display: flex;
+            height: 140px;
+            cursor: grab;
+            user-select: none;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+          }
+  
+          .gallery::-webkit-scrollbar {
+            display: none;
+          }
+  
+          .gallery:active {
+            cursor: grabbing;
+          }
+  
+          .gallery-item {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            object-fit: cover;
+            flex-shrink: 0;
+            position: relative;
+          }
+  
+          .gallery-item img {
+            /* border-radius: 50%; */
+            width: 100px;
+            height: 100px;
+            background-color: #ffffff21;
+          }
+  
+          .gallery-label {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 5px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -30px;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        </style>
 
         <hr />
       </div>
     </div>
 
-<div class="mobileCategory">
-        </div>
-<div class="mobileCategory_2">
-  <header class="header_for_cart" style="width: 100%; background: rgb(0, 0, 0); position: fixed; top: 0; z-index: 1000; padding-top: 2px; ">
-    <div style="display: flex; align-items: center; padding: 10px;">
-       <a href="index.html"> <i class="bi bi-arrow-left" style="font-size: 25px; color: white;"></i></a>
-        <p style="padding-left: 10px; color: white; margin: 0;">Categories</p>
-    </div>
-</header>
 
+   
 
-<div class="container" style="margin-top: 65px;">
-<div class="row">
-  <div class="col-6">
-    <div class="category_img">
-      <div style="display: flex;flex-direction: column; align-items: center;" onclick="BestSellerProducts();">
-        <img  src="assets/Images Category/Corner Shelf 2.jpg" alt="">
-        <p>Corner Shelf</p>
-      </div>
+    <div class="system_footer">
+        <footer class="bg-black text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- Github -->
+  
+                </section>
+  
+  
+                <!-- Section: Links -->
+                <section class="mb-4">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                            <div class="footer_h">
+                                <h5 class="text-uppercase"></h5>
+                                <img src="assets/XKG9RfcWlcdplux6f0JPlQTZfKcYeoMrUv75ZID9.png" style="width: 100%;" alt="">
+                                <p style="padding-top: 20px;">THE INTERIOR IS A CHOICE OF FREEDOM <br> FOR A HEALTHY AND HAPPY LIFE!!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                            <div class="footer_h">
+                                <h5 class="text-uppercase">Links</h5>
+                                <ul class="list-unstyled mb-0">
+                                    <p class="tooter_p">Terms $ Conditions</p>
+                                    <p class="tooter_p">Return Policy</p>
+                                    <p class="tooter_p">About</p>
+                                    <p class="tooter_p">Privacy Policy</li>
+                                </ul>
+                            </div>
+                        </div>
+                      
+                        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                            <div class="footer_h">
+                                <h5 class="text-uppercase">MY ACCOUNT</h5>
+                                <ul class="list-unstyled mb-0">
+                                    <p class="tooter_p">Login</p>
+                                    <p class="tooter_p">Order History</p>
+                                    <p class="tooter_p">My Wishlist</p>
+                                    <p class="tooter_p">Track Order</p>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                          <div class="footer_h">
+                              <h5 class="text-uppercase">CONTACT INFO</h5>
+                              <p style="font-size: 14px; color: #ffffff8c; margin: 0px;">Address :</p>
+                              <p class="tooter_p">R.S.No: 139, Manapet Road, Kanniakoil Bahour Commune, Village, Manapet, Puducherry 607402</p>
+                              <p style="font-size: 14px;  color: #ffffff8c; margin: 0px;">Phone :</p>
+                              <p class="tooter_p">+91 72003 92758</p>
+                              <p style="font-size: 14px;  color: #ffffff8c; margin: 0px;">Email:</p>
+                              <p class="tooter_p">moddwell@tprsenterprises.in/p>
+                          </div>
+                      </div>
+                        <!--Grid column-->
+  
+                        <!-- Repeat the above grid column structure for additional link sections -->
+  
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+  
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: #37363a; font-size: 14px; text-align: center;margin-bottom: 5px; padding: 0px; height: 35px; line-height: 0px;">
+              <div style="margin-bottom: 10px;">
+                  <p class="text-center">
+                      Copyright@ 2022 Moddwell. All Rights Reserved Powered by
+                      <a style="color: rgb(255, 255, 255);" href="https://Moddwell.com/">Zeekoi Enterprise Solutions.</a>
+                  </p>
+              </div>
+          </div>
+          
+          
+            <!-- Copyright -->
+        </footer>
     </div>
-  </div>
-   <div class="col-6">
-<div class="category_img">
-      <div style="display: flex;flex-direction: column; align-items: center;">
-        <img src="assets/Images Category/Digital Board.jpg" alt="">
-        <p>Corner Shelf</p>
-      </div>
-    </div>
-  </div>
-   <div class="col-6">
- <div class="category_img">
-      <div style="display: flex;flex-direction: column; align-items: center;">
-        <img src="assets/Images Category/LED Mirror2.jpg" alt="">
-        <p>Corner Shelf</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-6">
- <div class="category_img">
-      <div style="display: flex;flex-direction: column; align-items: center;">
-        <img src="assets/Images Category/Mirror Cabinet.jpg" alt="">
-        <p>Corner Shelf</p>
-      </div>
-    </div>
-    
-  </div>
-   <div class="col-6">
-    <div class="category_img">
-      <div style="display: flex;flex-direction: column; align-items: center;">
-        <img src="assets/Images Category/Corner Shelf 2.jpg" alt="">
-        <p>Corner Shelf</p>
-      </div>
-    </div>
-  </div>
-   <div class="col-6">
-<div class="category_img">
-      <div style="display: flex;flex-direction: column; align-items: center;">
-        <img src="assets/Images Category/Digital Board.jpg" alt="">
-        <p>Corner Shelf</p>
-      </div>
-    </div>
-  </div>
-   <div class="col-6">
- <div class="category_img">
-      <div style="display: flex;flex-direction: column; align-items: center;">
-        <img src="assets/Images Category/LED Mirror2.jpg" alt="">
-        <p>Corner Shelf</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-6">
- <div class="category_img">
-      <div style="display: flex;flex-direction: column; align-items: center;">
-        <img src="assets/Images Category/Mirror Cabinet.jpg" alt="">
-        <p>Corner Shelf</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
       
 </div>
 

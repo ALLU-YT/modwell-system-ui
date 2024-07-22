@@ -333,8 +333,10 @@
         <div class="profileHead">
           <div class="profileimageanaData">
             <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-            <h3>Ameen</h3>
-            <p>ameeofficial33@gmail.com</p>
+            <div class="" style="display: flex;flex-direction: column; margin-left: 10px;margin-top: 5px;">
+              <h3>Ameen</h3>
+              <p>ameeofficial33@gmail.com</p>
+             </div>
           </div>
         </div>
         <div class="menu">
@@ -364,11 +366,7 @@
   
   </div>
   <div class="col-lg-8">
-
-   <div class="system_tabs">
-    <p style="font-weight: 600;">Manage Profile</p>
-    <div class="purchasehistoryContainer" style="display: flex; flex-direction: column;" >
-      <style>
+ <style>
           .tab {
               display: flex;
               border-bottom: 1px solid #ccc;
@@ -412,7 +410,9 @@
   
 
 
-     <div class="system_tabs">
+   <div class="system_tabs">
+    <p style="font-weight: 600;">Manage Profile</p>
+    <div class="purchasehistoryContainer" style="display: flex; flex-direction: column;" >
       <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'London')">Basic Info</button>
         <button class="tablinks" onclick="openCity(event, 'Paris')">Address</button>
@@ -420,6 +420,8 @@
 
 
      </div>
+     <div class="system_tabs">
+  
       <div id="London" class="tabcontent">
         <div class="form-container">
             <form>
@@ -880,56 +882,13 @@
 </style>
 
 
-<!-- MobileUI -->
-<div>
-  <div  class="Profile_container" style="margin-top: 15px;    margin-bottom: -32px;">
-    <div style="display: flex; align-items: center; justify-content: center;">
-     <div style="display: flex; flex-direction: column;">
-       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWomPds9w5emH_C6RY8xF7KRCJe6I5zwVsuw&s" alt="">
-    <p style="padding: 5px;">Change Profile</p>
-     </div>
-    </div>
-  </div>
-  
- <div class="custom-container">
-      <form class="custom-form">
-        <label for="custom-name">Name</label>
-        <input type="text" id="custom-name" name="name" required  placeholder="Name"/>
 
-        <label for="custom-phone">Phone Number</label>
-        <input type="tel" id="custom-phone" name="phone" required placeholder="Number" />
-
-        <label for="custom-photo">Photo</label>
-        <input
-          type="file"
-          id="custom-photo"
-          name="photo"
-          accept="image/*"
-          required
-        />
-
-        <label for="custom-current-password">Current Password</label>
-       <input type="text" name="" id="" placeholder="Current Password">
-
-        <label for="custom-new-password">New Password</label>
-        <input
-          type="text" name="" id=""
-        
-          placeholder="New Password"
-          required
-        />
-
-       
-      </form>
-    </div>
-    
-</div>
   
 </div>
 
 </div>
 </div>
- <button type="submit" class="formbtn">Update Password</button>
+
     <!-- footer -->
      <div class="system_footer">
                         <footer class="bg-black text-center text-white">

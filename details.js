@@ -69,7 +69,7 @@ document.getElementById("closeBtn").addEventListener("click", function () {
 });
 
 document
-  .getElementById("signupPopupbtn")
+  .getElementById("signupPopupbtnn")
   .addEventListener("click", function () {
     document.getElementById("popupBackground").style.display = "none";
   });
