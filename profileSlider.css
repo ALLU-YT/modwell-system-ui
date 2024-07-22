@@ -1,0 +1,233 @@
+.menuu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: #151515;
+}
+
+.menuItemm {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.menuItemm i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.menuItemm p {
+  margin: 0;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+}
+
+.menuItemm:hover {
+  background: #a7a3a3;
+}
+
+.menuItemm.active {
+  background: #151515;
+}
+
+.slider {
+  position: fixed;
+  right: -300px;
+  z-index: 1000;
+  color: black;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #151515;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  transition: right 0.5s ease;
+}
+.slider.open {
+  right: 0;
+}
+
+.menuItemm:hover {
+  background: #a7a3a3;
+}
+
+.menuItemm.active {
+  background: #151515;
+}
+
+#slider {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logout-wrapper {
+  margin-top: auto;
+}
+
+.logout-btn {
+  background-color: #18578c;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.WishList_p {
+  font-size: 13px;
+}
+.addToCartBtn {
+  background: #18578c;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  border: none;
+}
+/*  */
+.item {
+  display: flex;
+  padding-top: 10px;
+  position: relative;
+}
+.item img {
+  width: 150px;
+  height: 140px;
+}
+.item .details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.item .actions {
+  position: absolute;
+  right: 10px;
+}
+.item .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.WishList_p {
+  font-size: 13px;
+}
+.addToCartBtn {
+  background: #18578c;
+  /* padding: 5px; */
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+  display: flex;
+  font-size: 12px;
+  color: white;
+  border: none;
+  margin-left: auto;
+}
+
+.item {
+  display: flex;
+  padding: 11px 10px 10px 10px;
+  margin: 5px;
+  position: relative;
+  background: rgb(0 0 0 / 27%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  perspective: 1000px;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 32px 64px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  width: 110px;
+  height: 110px;
+}
+.item .details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+.item .actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+
+.order-p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.425);
+  display: flex;
+  /* align-items: center; */
+}
+.order-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-container .bi-clock {
+  margin-right: 5px;
+}
+
+.order-container .order-p {
+  margin: 0;
+  padding-right: 10px;
+}
+.ProfileDashBoard {
+  width: 280px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.profileHead {
+  /* height: 200px; */
+  background: #000000;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 8px;
+}
+
+.profileimageanaData {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: start;
+  /* padding-top: 20px; */
+}
+
+.profileimageanaData img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 10px;
+  border: 2px solid #18578c;
+}
+
+.profileimageanaData h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.profileimageanaData p {
+  font-size: 14px;
+  margin: 0;
+}
